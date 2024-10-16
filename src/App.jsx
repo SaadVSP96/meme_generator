@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "./components/Header";
+import Meme from "./components/Meme";
 
 function App() {
-    return <h1>Hekkoooo</h1>;
+    return (
+        <>
+            <Header />
+            <Meme />
+        </>
+    );
 }
 
 export default App;
