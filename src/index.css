@@ -59,8 +59,47 @@ main {
     cursor: pointer;
 }
 
+.meme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .meme--image {
-    max-width: 100%;
+    width: 80%;
     border-radius: 3px;
     margin-top: 1rem;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    font-family: Impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+        -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+        -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+@media (width > 768px) {
+    .meme--text {
+        font-size: 4em;
+    }
+}
+
+.bottom {
+    bottom: 10%;
+}
+
+.top {
+    top: 10%;
 }
